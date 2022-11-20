@@ -1,0 +1,39 @@
+" Remaping
+:imap jj <ESC>
+:nnoremap <Space>w :w<CR>
+
+" NERDTree mappings
+nnoremap <Space>E :NERDTreeFocus<CR>
+nnoremap <Space>e :NERDTreeToggle<CR>
+
+" Standart vim settings
+:set number
+:set autoindent
+:set smarttab
+:set mouse=a
+
+" UI settings
+:colorscheme gruvbox
+
+" Pluggins
+call plug#begin()
+
+Plug 'https://github.com/vim-airline/vim-airline'
+Plug 'https://github.com/morhetz/gruvbox'
+Plug 'https://github.com/preservim/nerdtree'
+Plug 'https://github.com/tpope/vim-commentary'
+Plug 'https://github.com/voldikss/vim-floaterm'
+Plug 'https://github.com/tpope/vim-surround'
+Plug 'https://github.com/ryanoasis/vim-devicons'
+
+call plug#end()
+
+" NERDTree icons
+let g:NERDTreeDirArrowExpandable="+"
+let g:NERDTreeDirArrowCollapsible="~"
+
+" Floating terminal UI
+let g:floaterm_keymap_toggle = '<Space>t'
+let g:floaterm_position = 'bottom'
+let g:floaterm_borderchars=["─", "│", "─", "│", "╭", "╮", "╯", "╰"]
+let g:floaterm_width = 1.0
