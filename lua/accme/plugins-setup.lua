@@ -30,7 +30,6 @@ end
 
 -- add list of plugins to install
 return packer.startup(function(use)
-	-- packer can manage itself
 	use("wbthomason/packer.nvim")
 
 	use("nvim-lua/plenary.nvim") -- plugin that is required for telescope to work
