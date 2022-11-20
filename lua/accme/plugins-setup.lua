@@ -90,6 +90,7 @@ return packer.startup(function(use)
 	-- golang --
 	use("ray-x/go.nvim")
 	use("ray-x/guihua.lua") -- recommanded if need floating window support
+	use("https://github.com/fatih/vim-go")
 
 	if packer_bootstrap then
 		require("packer").sync()
