@@ -87,14 +87,9 @@ return packer.startup(function(use)
 	use("jose-elias-alvarez/null-ls.nvim") -- configure formatters & linters
 	use("jayp0521/mason-null-ls.nvim") -- bridges gap b/w mason & null-ls
 
-	-- tabs --
-	-- use({ "akinsho/bufferline.nvim", tag = "v3.*", requires = "nvim-tree/nvim-web-devicons" })
-
 	-- golang --
 	use("ray-x/go.nvim")
 	use("ray-x/guihua.lua") -- recommanded if need floating window support
-
-	use({ "akinsho/toggleterm.nvim", tag = "*" })
 
 	if packer_bootstrap then
 		require("packer").sync()

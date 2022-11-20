@@ -20,9 +20,9 @@ opt.smartcase = true
 opt.cursorline = true
 
 -- appearance
--- opt.termguicolors = true ### makes line fill
--- opt.background = "transparent"  ### doesn't work this way
--- opt.signcolumn = "yes" ### addes to the termguicolor something
+opt.termguicolors = true
+-- opt.background = "transparent" -- doesn't work this way
+opt.signcolumn = "yes" -- addes to the termguicolor something
 
 -- backspace
 opt.backspace = "indent,eol,start" --- I HAVE NO IDEA WHAT IT DOES
@@ -33,5 +33,3 @@ opt.clipboard:append("unnamedplus") -- for copy/paste from the outside
 -- split windows
 opt.splitright = true
 opt.splitbelow = true
-
-
