@@ -24,7 +24,7 @@ keymap.set("n", "<leader>fc", ":tabclose<CR>") -- close current tab
 -- keymap.set("n", "<S-h>", ":tabp<CR>") -- close current tab
 
 -- close the buffer without closing the window ## works really slow
--- keymap.set("n", "<leader>c", ":enew<bar>bd #<CR>")
+keymap.set("n", "<leader>q", ":enew<bar>bd #<CR>")
 
 keymap.set("n", "<S-l>", ":bnext<CR>") -- close current tab
 keymap.set("n", "<S-h>", ":bprev<CR>") -- close current tab
