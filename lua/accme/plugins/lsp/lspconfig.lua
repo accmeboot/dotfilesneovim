@@ -60,7 +60,7 @@ local capabilities = cmp_nvim_lsp.default_capabilities()
 lspconfig["html"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
-	filetype = { "html", "tmpl" },
+	filetype = { "html", "tmpl", "gotmpl" },
 })
 
 lspconfig["pyright"].setup({
@@ -71,7 +71,6 @@ lspconfig["pyright"].setup({
 lspconfig["gopls"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
-	filetypes = { "go", "gomod", "gowork", "gotmpl", "tmpl" },
 	cmd = { "gopls", "--remote=auto" },
 })
 
