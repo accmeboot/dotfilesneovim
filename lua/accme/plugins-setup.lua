@@ -92,6 +92,9 @@ return packer.startup(function(use)
 	use("ray-x/guihua.lua") -- recommanded if need floating window support
 	use("https://github.com/fatih/vim-go")
 
+	-- smooth movements --
+	use("https://github.com/psliwka/vim-smoothie")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
