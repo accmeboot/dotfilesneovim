@@ -92,6 +92,9 @@ return packer.startup(function(use)
 	use("ray-x/guihua.lua") -- recommanded if need floating window support
 	use("https://github.com/fatih/vim-go")
 
+	-- better syntaxis highlight --
+	use("sheerun/vim-polyglot")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
