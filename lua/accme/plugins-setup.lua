@@ -96,6 +96,9 @@ return packer.startup(function(use)
 	-- better syntaxis highlight --
 	use("sheerun/vim-polyglot")
 
+	-- smooth movements --
+	use("https://github.com/psliwka/vim-smoothie")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
