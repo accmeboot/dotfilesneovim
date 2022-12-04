@@ -35,6 +35,7 @@ return packer.startup(function(use)
 	use("nvim-lua/plenary.nvim") -- plugin that is required for telescope to work
 
 	use("https://github.com/morhetz/gruvbox")
+	use("https://github.com/sainnhe/gruvbox-material")
 
 	use("christoomey/vim-tmux-navigator") -- navigation between split windows via ctrl + h/j/k/l
 
