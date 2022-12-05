@@ -19,12 +19,12 @@ null_ls.setup({
 		--  "formatting.prettier.with({disabled_filetypes: {}})" (see null-ls docs)
 		formatting.prettier, -- js/ts formatter
 		formatting.stylua, -- lua formatter
-		formatting.autopep8.with({
+		formatting.black.with({
 			prefer_local = "venv/bin",
-		}),
+		}), -- python formatter
 		diagnostics.flake8.with({
 			prefer_local = "venv/bin",
-		}),
+		}), -- python linter. Alternatives: mypy, pylint
 		diagnostics.eslint_d.with({ -- js/ts linter
 			-- only enable eslint if root has .eslintrc.js (not in youtube nvim video)
 			condition = function(utils)

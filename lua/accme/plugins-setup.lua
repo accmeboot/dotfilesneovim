@@ -99,6 +99,9 @@ return packer.startup(function(use)
 	-- smooth movements --
 	use("https://github.com/psliwka/vim-smoothie")
 
+	-- git --
+	use("https://github.com/tpope/vim-fugitive")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
