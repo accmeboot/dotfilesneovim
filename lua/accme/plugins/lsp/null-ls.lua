@@ -28,7 +28,15 @@ null_ls.setup({
 		diagnostics.eslint_d.with({ -- js/ts linter
 			-- only enable eslint if root has .eslintrc.js (not in youtube nvim video)
 			condition = function(utils)
-				return utils.root_has_file(".eslintrc.js") -- change file extension if you use something else
+				if utils.root_has_file(".eslintrc.js") then
+					return utils.root_has_file(".eslintrc.js") -- change file extension if you use something else
+				end
+				if utils.root_has_file(".eslintrc") then
+					return utils.root_has_file(".eslintrc") -- change file extension if you use something else
+				end
+				if utils.root_has_file(".eslintrc.json") then
+					return utils.root_has_file(".eslintrc.json") -- change file extension if you use something else
+				end
 			end,
 		}),
 	},

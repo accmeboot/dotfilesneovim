@@ -89,17 +89,17 @@ lspconfig["cssls"].setup({
 })
 
 -- configure tailwindcss server
--- lspconfig["tailwindcss"].setup({
---   capabilities = capabilities,
---   on_attach = on_attach,
--- })
+lspconfig["tailwindcss"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
 --
 -- -- configure emmet language server
--- lspconfig["emmet_ls"].setup({
---   capabilities = capabilities,
---   on_attach = on_attach,
---   filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
--- })
+lspconfig["emmet_ls"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+	filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
+})
 
 -- configure lua server (with special settings)
 lspconfig["sumneko_lua"].setup({
