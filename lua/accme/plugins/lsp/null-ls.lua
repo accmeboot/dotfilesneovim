@@ -37,6 +37,9 @@ null_ls.setup({
 				if utils.root_has_file(".eslintrc.json") then
 					return utils.root_has_file(".eslintrc.json") -- change file extension if you use something else
 				end
+				if utils.root_has_file("./app/.eslintrc.js") then
+					return utils.root_has_file("./app/.eslintrc.js")
+				end
 			end,
 		}),
 	},

@@ -13,17 +13,33 @@ vim.g.gruvbox_material_transparent_background = 2 -- 0, 1 or 2
 -- vim.g.gruvbox_material_current_word = "italic" -- bold, underline, italic, grey
 -- vim.g.gruvbox_material_statusline_style = "original" -- default, mix, original
 
+-- adding border to floating windows from LSP
+local border = "rounded"
+
+vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
+	border = border,
+})
+
+vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, {
+	border = border,
+})
+
+vim.diagnostic.config({
+	float = { border = border },
+})
+-----------------------------------------------
+
 vim.cmd("colorscheme gruvbox-material")
 
--- vim.cmd([[
---     try
---         colorscheme gruvbox-material
---     catch /^Vim\%((\a\+)\)\=:E185/
---         colorscheme default
---         set background=dark
---     endtry
---         " highlight FloatBorder guibg=NONE ctermbg=NONE  " Removes the border of float menu (LSP and Autocompletion uses it)
---         " highlight link NormalFloat Normal
---         " highlight NormalFloat ctermbg=NONE guibg=NONE
---         " highlight Pmenu ctermbg=NONE guibg=NONE
--- ]])
+vim.cmd([[
+    try
+        colorscheme gruvbox-material
+    catch /^Vim\%((\a\+)\)\=:E185/
+        colorscheme default
+        set background=dark
+    endtry
+        highlight FloatBorder guibg=NONE ctermbg=NONE " Removes the border of float menu (LSP and Autocompletion uses it)
+        highlight link NormalFloat Normal
+        highlight NormalFloat ctermbg=NONE guibg=NONE
+        highlight Pmenu ctermbg=NONE guibg=NONE
+]])
