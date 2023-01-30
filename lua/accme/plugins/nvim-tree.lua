@@ -1,10 +1,14 @@
 local setup, nvimtree = pcall(require, "nvim-tree")
 if not setup then
-  return
+	return
 end
 
 -- recommended settings from docs
 vim.g.loaded = 1
 vim.g.loaded_netrwPlugin = 1
 
-nvimtree.setup()
+nvimtree.setup({
+	view = {
+		adaptive_size = true,
+	},
+})

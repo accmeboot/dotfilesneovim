@@ -40,6 +40,7 @@ local on_attach = function(client, bufnr)
 	keymap.set("n", "gd", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts) -- go to implementation
 	keymap.set("n", "K", "<cmd>lua vim.lsp.buf.hover()<CR>", opts) -- show definition
 	keymap.set("n", "gf", "<cmd>lua vim.lsp.buf.references()<CR>", opts) -- show references
+	keymap.set("n", "<leader>C", "<cmd>lua vim.lsp.buf.code_action()<CR>", opts) -- show references
 	keymap.set("n", "<leader>R", "<cmd>lua vim.lsp.buf.rename()<CR>", opts) -- rename everywhere
 	keymap.set("n", "<leader>d", "<cmd>lua vim.diagnostic.open_float()<CR>", opts) -- show diagnostic
 
