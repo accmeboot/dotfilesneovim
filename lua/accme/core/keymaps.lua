@@ -32,7 +32,8 @@ keymap.set("n", "<S-h>", ":bprev<CR>") -- close current tab
 keymap.set("n", "<leader>Q", "<esc>:wq!<cr>") -- save and close
 
 -- file explorer --
-keymap.set("n", "<leader>e", ":NvimTreeFindFileToggle<CR>")
+keymap.set("n", "<leader>E", ":NeoTreeFocusToggle<CR>")
+keymap.set("n", "<leader>e", ":NeoTreeFloatToggle<CR>")
 
 -- telescope --
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>")

@@ -1,6 +1,10 @@
 local status, lualine = pcall(require, "lualine")
 if not status then
-  return
+	return
 end
 
-lualine.setup()
+lualine.setup({
+	options = {
+		theme = "sonokai",
+	},
+})

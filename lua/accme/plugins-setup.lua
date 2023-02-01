@@ -36,12 +36,22 @@ return packer.startup(function(use)
 
 	use("https://github.com/morhetz/gruvbox")
 	use("https://github.com/sainnhe/gruvbox-material")
+	use("https://github.com/sainnhe/sonokai")
 
 	use("christoomey/vim-tmux-navigator") -- navigation between split windows via ctrl + h/j/k/l
 
 	use("numToStr/Comment.nvim") -- comment out on gc
 
-	use("nvim-tree/nvim-tree.lua") -- file explorer
+	use({
+		"nvim-neo-tree/neo-tree.nvim",
+		requires = {
+			"nvim-lua/plenary.nvim",
+			"nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+			"MunifTanjim/nui.nvim",
+		},
+	})
+	use("simrat39/symbols-outline.nvim")
+	-- use("nvim-tree/nvim-tree.lua") -- file explorer
 
 	use("nvim-tree/nvim-web-devicons") -- icons for the explorer
 
