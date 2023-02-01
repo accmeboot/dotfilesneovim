@@ -3,4 +3,4 @@ if not setup then
 	return
 end
 
-symbols.setup()
+symbols.setup({})
