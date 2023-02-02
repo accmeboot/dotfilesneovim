@@ -50,9 +50,6 @@ return packer.startup(function(use)
 			"MunifTanjim/nui.nvim",
 		},
 	})
-	-- use("simrat39/symbols-outline.nvim")
-	-- use("nvim-tree/nvim-tree.lua") -- file explorer
-	use({ "wfxr/minimap.vim" })
 
 	use("nvim-tree/nvim-web-devicons") -- icons for the explorer
 
