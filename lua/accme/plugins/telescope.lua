@@ -39,11 +39,13 @@ telescope.setup({
 	defaults = {
 		sorting_strategy = "ascending",
 		results_title = false,
+		layout_strategy = "vertical",
 		layout_config = {
 			prompt_position = "top",
-			height = 0.5,
-			width = 0.95,
-			anchor = "S",
+			height = 0.8,
+			preview_height = 0.2,
+			width = 0.6,
+			anchor = "CENTER",
 		},
 		mappings = {
 			i = {
