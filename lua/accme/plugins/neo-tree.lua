@@ -10,7 +10,7 @@ neotree.setup({
 	close_if_last_window = "true",
 	opup_border_style = "rounded",
 	window = {
-		position = "float",
+		position = "left",
 		mappings = {
 			["o"] = "open",
 		},

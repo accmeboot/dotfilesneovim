@@ -32,8 +32,8 @@ keymap.set("n", "<S-h>", ":bprev<CR>") -- close current tab
 keymap.set("n", "<leader>Q", "<esc>:wq!<cr>") -- save and close
 
 -- file explorer --
-keymap.set("n", "<leader>E", ":NeoTreeFocusToggle<CR>")
-keymap.set("n", "<leader>e", ":NeoTreeFloatToggle<CR>")
+keymap.set("n", "<leader>e", ":NeoTreeFocusToggle<CR>")
+keymap.set("n", "<leader>E", ":NeoTreeFloatToggle<CR>")
 
 -- telescope --
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>")
@@ -45,3 +45,6 @@ keymap.set("n", "<leader>fr", "<cmd>Telescope resume<cr>")
 
 --lsp reload --
 keymap.set("n", "<leader>RR", ":LspRestart<CR>")
+
+-- cmdline --
+keymap.set("n", "<leader>t", "<cmd>FineCmdline<CR>")

@@ -51,6 +51,14 @@ return packer.startup(function(use)
 		},
 	})
 
+	-- Floating cmdline
+	use({
+		"VonHeikemen/fine-cmdline.nvim",
+		requires = {
+			{ "MunifTanjim/nui.nvim" },
+		},
+	})
+
 	use("nvim-tree/nvim-web-devicons") -- icons for the explorer
 
 	use("nvim-lualine/lualine.nvim") -- bottom statusline
