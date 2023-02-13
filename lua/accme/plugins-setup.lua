@@ -38,6 +38,8 @@ return packer.startup(function(use)
 	use("https://github.com/sainnhe/gruvbox-material")
 	use("https://github.com/sainnhe/sonokai")
 
+	use("ray-x/starry.nvim")
+
 	use("christoomey/vim-tmux-navigator") -- navigation between split windows via ctrl + h/j/k/l
 
 	use("numToStr/Comment.nvim") -- comment out on gc
