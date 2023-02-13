@@ -20,9 +20,11 @@ vim.g.sonokai_style = "atlantis"
 
 vim.g.starry_disable_background = true
 vim.g.starry_contrast = false
+vim.g.starry_darker_contrast = false
+vim.g.starry_borders = true
 
 vim.cmd("colorscheme starry")
-vim.cmd("Starry dracula")
+vim.cmd("Starry monokai")
 
 vim.cmd([[
     try

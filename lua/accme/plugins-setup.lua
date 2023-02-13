@@ -1,5 +1,6 @@
 -- ATUMATIC PACKER (plugin manager) INSTALATION --
 
+
 -- auto install packer if not installed
 local ensure_packer = function()
 	local fn = vim.fn
