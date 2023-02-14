@@ -12,29 +12,9 @@ vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.s
 vim.diagnostic.config({
 	float = { border = border },
 })
------------------------------------------------
 
-vim.g.sonokai_better_performance = 1 --For Better Performance
-vim.g.sonokai_transparent_background = 2 -- 0, 1 or 2
-vim.g.sonokai_style = "atlantis"
-
-vim.g.starry_disable_background = true
-vim.g.starry_contrast = false
-vim.g.starry_darker_contrast = false
-vim.g.starry_borders = true
-
-vim.cmd("colorscheme starry")
-vim.cmd("Starry monokai")
-
-vim.cmd([[
-    try
-        colorscheme starry
-    catch /^Vim\%((\a\+)\)\=:E185/
-        colorscheme default
-        set background=dark
-    endtry
-        highlight FloatBorder guibg=NONE ctermbg=NONE " Removes the border of float menu (LSP and Autocompletion uses it)
-        highlight link NormalFloat Normal
-        highlight NormalFloat ctermbg=NONE guibg=NONE
-        highlight Pmenu ctermbg=NONE guibg=NONE
-]])
+-- adding transparency to windows
+vim.cmd("highlight FloatBorder guibg=NONE ctermbg=NONE")
+vim.cmd("highlight link NormalFloat Normal")
+vim.cmd("highlight NormalFloat ctermbg=NONE guibg=NONE")
+vim.cmd("highlight Pmenu ctermbg=NONE guibg=NONE")

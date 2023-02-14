@@ -5,6 +5,6 @@ end
 
 lualine.setup({
 	options = {
-		theme = "sonokai",
+		theme = "gruvbox",
 	},
 })

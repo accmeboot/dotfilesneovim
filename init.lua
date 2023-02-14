@@ -2,7 +2,6 @@ require("accme.plugins-setup")
 require("accme.plugins.nvim-cmp")
 require("accme.core.options")
 require("accme.core.keymaps")
-require("accme.core.colorscheme")
 require("accme.plugins.fine-cmdline")
 require("accme.plugins.comment")
 require("accme.plugins.neo-tree")
@@ -17,3 +16,10 @@ require("accme.plugins.lsp.go")
 require("accme.plugins.lsp.polyglot")
 require("accme.plugins.vim-matchup")
 require("accme.plugins.nvim-colorizer")
+
+-- THEME --
+-- require("accme.themes.starry")
+require("accme.themes.gruvbox")
+-- require("accme.themes.sonokai")
+
+require("accme.core.colorscheme")

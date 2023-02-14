@@ -1,6 +1,5 @@
 -- ATUMATIC PACKER (plugin manager) INSTALATION --
 
-
 -- auto install packer if not installed
 local ensure_packer = function()
 	local fn = vim.fn
@@ -38,6 +37,7 @@ return packer.startup(function(use)
 	use("https://github.com/morhetz/gruvbox")
 	use("https://github.com/sainnhe/gruvbox-material")
 	use("https://github.com/sainnhe/sonokai")
+	use("https://github.com/arzg/vim-colors-xcode")
 
 	use("ray-x/starry.nvim")
 
