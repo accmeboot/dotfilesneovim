@@ -6,6 +6,31 @@ end
 
 -- configure treesitter
 treesitter.setup({
+	-- context commenting
+	context_commentstring = {
+		enable = true,
+		enable_autocmd = false,
+		context_commentstring = {
+			enable = true,
+			config = {
+				javascript = {
+					__default = "// %s",
+					jsx_element = "{/* %s */}",
+					jsx_fragment = "{/* %s */}",
+					jsx_attribute = "// %s",
+					comment = "// %s",
+				},
+				typescript = {
+					__default = "// %s",
+					jsx_element = "{/* %s */}",
+					jsx_fragment = "{/* %s */}",
+					jsx_attribute = "// %s",
+					comment = "// %s",
+				},
+			},
+		},
+	},
+
 	-- enable syntax highlighting
 	highlight = {
 		enable = true,
