@@ -16,6 +16,8 @@ require("accme.plugins.lsp.go")
 require("accme.plugins.lsp.polyglot")
 require("accme.plugins.vim-matchup")
 require("accme.plugins.nvim-colorizer")
+-- smooth scrolling --
+require("accme.plugins.neoscroll")
 
 -- THEME --
 -- require("accme.themes.starry")
