@@ -1,5 +1,6 @@
 require("accme.plugins-setup")
 require("accme.plugins.nvim-cmp")
+require("accme.core.autocmd")
 require("accme.core.options")
 require("accme.core.keymaps")
 require("accme.plugins.fine-cmdline")

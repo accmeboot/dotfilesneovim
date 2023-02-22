@@ -1,4 +1,4 @@
-local opt = vim.opt -- options gloabal variable
+local opt = vim.opt -- options gloabals variable
 
 -- line numbers
 opt.number = true
@@ -33,7 +33,3 @@ opt.clipboard:append("unnamedplus") -- for copy/paste from the outside
 -- split windows
 opt.splitright = true
 opt.splitbelow = true
-
-vim.api.nvim_create_autocmd({ "VimEnter" }, {
-	command = ":Neotree float",
-})
