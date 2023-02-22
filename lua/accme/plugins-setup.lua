@@ -124,9 +124,6 @@ return packer.startup(function(use)
 	-- better syntaxis highlight --
 	use("sheerun/vim-polyglot")
 
-	-- smooth movements --
-	use("karb94/neoscroll.nvim")
-
 	-- git --
 	use("https://github.com/tpope/vim-fugitive")
 
