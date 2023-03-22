@@ -3,8 +3,8 @@ if not setup then
 	return
 end
 
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
+vim.g.loaded_netrw = 2
+vim.g.loaded_netrwPlugin = 2
 
 neotree.setup({
 	-- close_if_last_window = "true",
@@ -204,6 +204,7 @@ neotree.setup({
 		group_empty_dirs = true, -- when true, empty folders will be grouped together
 		show_unloaded = true,
 		window = {
+			position = "right",
 			mappings = {
 				["bd"] = "buffer_delete",
 				["<bs>"] = "navigate_up",

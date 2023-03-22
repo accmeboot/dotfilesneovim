@@ -35,6 +35,8 @@ keymap.set("n", "<leader>Q", "<esc>:wq!<cr>") -- save and close
 keymap.set("n", "<leader>e", ":NeoTreeFocusToggle<CR>")
 keymap.set("n", "<leader>E", ":NeoTreeFloatToggle<CR>")
 
+keymap.set("n", "<leader>b", ":Neotree buffers toggle<CR>")
+
 -- telescope --
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>")
 keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>")

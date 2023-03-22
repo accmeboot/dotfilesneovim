@@ -9,9 +9,8 @@
 -- 		local isFolder = toBoolean(vim.fn.isdirectory(args[2]))
 -- 		local isGit = args[3] == "g"
 --
--- 		print(args)
---
 -- 		if isNvimOpening and isFolder then
+-- 			vim.cmd(":Neotree buffers")
 -- 			if isGit then
 -- 				vim.cmd(":G")
 -- 			end
