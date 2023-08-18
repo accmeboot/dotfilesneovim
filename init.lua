@@ -17,6 +17,7 @@ require("accme.plugins.lsp.go")
 require("accme.plugins.lsp.polyglot")
 require("accme.plugins.vim-matchup")
 require("accme.plugins.nvim-colorizer")
+require("accme.plugins.mini-indentscope")
 
 -- THEME --
 -- require("accme.themes.starry")

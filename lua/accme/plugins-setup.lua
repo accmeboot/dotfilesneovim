@@ -34,6 +34,8 @@ return packer.startup(function(use)
 
 	use("nvim-lua/plenary.nvim") -- plugin that is required for telescope to work
 
+	use("https://github.com/echasnovski/mini.indentscope")
+
 	use("https://github.com/morhetz/gruvbox")
 	use("https://github.com/sainnhe/gruvbox-material")
 	use("https://github.com/sainnhe/sonokai")
