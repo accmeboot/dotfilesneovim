@@ -40,6 +40,9 @@ null_ls.setup({
 				if utils.root_has_file("./app/.eslintrc.js") then
 					return utils.root_has_file("./app/.eslintrc.js")
 				end
+				if utils.root_has_file(".eslintrc.cjs") then
+					return utils.root_has_file(".eslintrc.cjs")
+				end
 			end,
 		}),
 	},

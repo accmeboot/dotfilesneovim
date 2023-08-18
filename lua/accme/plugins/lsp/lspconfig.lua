@@ -85,7 +85,7 @@ lspconfig["gopls"].setup({
 	cmd = { "gopls", "--remote=auto" },
 })
 
-lspconfig["sqls"].setup({
+lspconfig["sqlls"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
 })
