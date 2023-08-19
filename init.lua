@@ -1,4 +1,4 @@
-require("accme.plugins-setup")
+require("accme.lazy")
 require("accme.plugins.nvim-cmp")
 require("accme.core.autocmd")
 require("accme.core.options")

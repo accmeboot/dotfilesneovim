@@ -1,9 +1,4 @@
-vim.g.mapleader = " "
-
 local keymap = vim.keymap
-
--- jj for escape
-keymap.set("i", "jj", "<ESC>")
 
 -- nh for cleaning highlights after search
 keymap.set("n", "<leader>nh", ":nohl<CR>")
@@ -32,8 +27,7 @@ keymap.set("n", "<S-h>", ":bprev<CR>") -- close current tab
 keymap.set("n", "<leader>Q", "<esc>:wq!<cr>") -- save and close
 
 -- file explorer --
-keymap.set("n", "<leader>e", ":NeoTreeFocusToggle<CR>")
-keymap.set("n", "<leader>E", ":NeoTreeFloatToggle<CR>")
+keymap.set("n", "<leader>e", ":Neotree focus toggle<CR>")
 
 keymap.set("n", "<leader>b", ":Neotree buffers toggle<CR>")
 
