@@ -6,8 +6,11 @@ end
 cmdline.setup({
 	popup = {
 		position = {
-			row = "50%",
-			col = "50%",
+			row = "95%",
+			col = "0%",
+		},
+		size = {
+			width = "20%",
 		},
 	},
 })
