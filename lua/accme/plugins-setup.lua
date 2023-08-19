@@ -35,6 +35,7 @@ return packer.startup(function(use)
 	use("nvim-lua/plenary.nvim") -- plugin that is required for telescope to work
 
 	use("https://github.com/echasnovski/mini.indentscope")
+	use("lukas-reineke/indent-blankline.nvim") -- indent lines
 
 	use("https://github.com/morhetz/gruvbox")
 	use("https://github.com/sainnhe/gruvbox-material")
@@ -48,8 +49,6 @@ return packer.startup(function(use)
 	use("numToStr/Comment.nvim") -- comment out on gc
 
 	use("JoosepAlviste/nvim-ts-context-commentstring") -- better comenting
-
-	use("lukas-reineke/indent-blankline.nvim") -- indent lines
 
 	use({
 		"nvim-neo-tree/neo-tree.nvim",

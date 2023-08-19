@@ -19,3 +19,5 @@
 -- })
 
 -- TODO: Find out why neotree overwrites :G
+
+vim.cmd("let &statuscolumn='%C%s%l'")
