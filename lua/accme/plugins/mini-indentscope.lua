@@ -3,4 +3,6 @@ if not status then
 	return
 end
 
-mini_indentscope.setup()
+mini_indentscope.setup({
+	symbol = "│",
+})

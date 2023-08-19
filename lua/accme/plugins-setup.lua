@@ -46,7 +46,10 @@ return packer.startup(function(use)
 	use("christoomey/vim-tmux-navigator") -- navigation between split windows via ctrl + h/j/k/l
 
 	use("numToStr/Comment.nvim") -- comment out on gc
+
 	use("JoosepAlviste/nvim-ts-context-commentstring") -- better comenting
+
+	use("lukas-reineke/indent-blankline.nvim") -- indent lines
 
 	use({
 		"nvim-neo-tree/neo-tree.nvim",
