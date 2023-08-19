@@ -22,9 +22,11 @@ require("luasnip/loaders/from_vscode").lazy_load()
 vim.opt.completeopt = "menu,menuone,noselect"
 
 cmp.setup({
-	completion = {
-		completeopt = "menu,menuone,noinsert",
-		border = "rounded",
+	window = {
+		completion = {
+			completeopt = "menu,menuone,noinsert",
+			border = "rounded",
+		},
 	},
 	snippet = {
 		expand = function(args)
