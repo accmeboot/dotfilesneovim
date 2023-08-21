@@ -23,5 +23,7 @@ require("accme.plugins.mini-indentscope")
 -- require("accme.themes.starry")
 require("accme.themes.gruvbox")
 -- require("accme.themes.sonokai")
+-- require("accme.themes.catppuccin")
+-- require("accme.themes.dracula-solid")
 
 require("accme.core.colorscheme")

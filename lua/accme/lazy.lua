@@ -22,6 +22,10 @@ local plugins = {
 	-- themes --
 	{ "https://github.com/sainnhe/gruvbox-material" },
 	{ "https://github.com/sainnhe/gruvbox-material" },
+	{ "https://github.com/ray-x/starry.nvim" },
+	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+	{ "rktjmp/lush.nvim" },
+	{ "briones-gabriel/darcula-solid.nvim", dependencies = { "rktjmp/lush.nvim" } },
 
 	{ "christoomey/vim-tmux-navigator" }, -- navigation between split windows via ctrl + h/j/k/l
 

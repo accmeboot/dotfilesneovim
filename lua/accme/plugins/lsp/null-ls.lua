@@ -17,7 +17,22 @@ null_ls.setup({
 	sources = {
 		--  to disable file types use
 		--  "formatting.prettier.with({disabled_filetypes: {}})" (see null-ls docs)
-		formatting.prettier, -- js/ts formatter
+		formatting.prettier.with({
+			filetypes = {
+				"javascript",
+				"typescript",
+				"css",
+				"scss",
+				"html",
+				"json",
+				"yaml",
+				"markdown",
+				"graphql",
+				"md",
+				"txt",
+			},
+			only_local = "node_modules/.bin",
+		}), -- js/ts formatter
 		formatting.stylua, -- lua formatter
 		formatting.black.with({
 			prefer_local = "venv/bin",
