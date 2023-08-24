@@ -41,6 +41,3 @@ keymap.set("n", "<leader>fr", "<cmd>Telescope resume<cr>")
 
 --lsp reload --
 keymap.set("n", "<leader>RR", ":LspRestart<CR>")
-
--- cmdline --
-keymap.set("n", "<leader>t", "<cmd>FineCmdline<CR>")

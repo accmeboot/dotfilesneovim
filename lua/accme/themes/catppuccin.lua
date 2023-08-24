@@ -4,7 +4,7 @@ if not setup then
 end
 
 catppuccin.setup({
-	flavour = "mocha", -- latte, frappe, macchiato, mocha
+	flavour = "Frappe", -- latte, frappe, macchiato, mocha
 	background = { -- :h background
 		light = "latte",
 		dark = "mocha",

@@ -21,12 +21,9 @@ local plugins = {
 	{ "https://github.com/morhetz/gruvbox" },
 	-- themes --
 	{ "https://github.com/sainnhe/gruvbox-material" },
-	{ "https://github.com/sainnhe/gruvbox-material" },
-	{ "https://github.com/ray-x/starry.nvim" },
 	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
-	{ "rktjmp/lush.nvim" },
-	{ "briones-gabriel/darcula-solid.nvim", dependencies = { "rktjmp/lush.nvim" } },
 
+	-- tmux integration--
 	{ "christoomey/vim-tmux-navigator" }, -- navigation between split windows via ctrl + h/j/k/l
 
 	{ "numToStr/Comment.nvim" }, -- comment out on gc
@@ -41,13 +38,6 @@ local plugins = {
 			"nvim-lua/plenary.nvim",
 			"nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
 			"MunifTanjim/nui.nvim",
-		},
-	},
-	-- Floating cmdline
-	{
-		"VonHeikemen/fine-cmdline.nvim",
-		dependencies = {
-			{ "MunifTanjim/nui.nvim" },
 		},
 	},
 
@@ -100,8 +90,11 @@ local plugins = {
 	{ "norcalli/nvim-colorizer.lua" },
 
 	-- formatting & linting
-	{ "jose-elias-alvarez/null-ls.nvim" }, -- configure formatters & linters
-	{ "jayp0521/mason-null-ls.nvim" }, -- bridges gap b/w mason & null-ls
+	{
+		"creativenull/efmls-configs-nvim",
+		version = "v1.x.x", -- version is optional, but recommended
+		dependencies = { "neovim/nvim-lspconfig" },
+	},
 
 	-- golang --
 	{ "ray-x/go.nvim" },
