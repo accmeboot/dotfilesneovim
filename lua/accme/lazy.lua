@@ -22,6 +22,12 @@ local plugins = {
 	-- themes --
 	{ "https://github.com/sainnhe/gruvbox-material" },
 	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+	{
+		"xiantang/darcula-dark.nvim",
+		dependencies = {
+			"nvim-treesitter/nvim-treesitter",
+		},
+	},
 
 	-- tmux integration--
 	{ "christoomey/vim-tmux-navigator" }, -- navigation between split windows via ctrl + h/j/k/l
