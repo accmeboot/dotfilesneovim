@@ -19,8 +19,7 @@ require("accme.plugins.nvim-colorizer")
 require("accme.plugins.mini-indentscope")
 
 -- THEME --
--- require("accme.themes.gruvbox")
--- require("accme.themes.catppuccin")
-require("accme.themes.dracula-dark")
+require("accme.themes.gruvbox")
+-- require("accme.themes.fleet")
 
 require("accme.core.colorscheme")

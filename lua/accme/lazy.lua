@@ -18,16 +18,9 @@ local plugins = {
 	{ "nvim-lua/plenary.nvim" },
 	{ "https://github.com/echasnovski/mini.indentscope" }, -- animated highilting the current code selection
 	{ "lukas-reineke/indent-blankline.nvim" }, -- indent lines
-	{ "https://github.com/morhetz/gruvbox" },
 	-- themes --
 	{ "https://github.com/sainnhe/gruvbox-material" },
-	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
-	{
-		"xiantang/darcula-dark.nvim",
-		dependencies = {
-			"nvim-treesitter/nvim-treesitter",
-		},
-	},
+	{ "felipeagc/fleet-theme-nvim" },
 
 	-- tmux integration--
 	{ "christoomey/vim-tmux-navigator" }, -- navigation between split windows via ctrl + h/j/k/l
