@@ -27,7 +27,7 @@ keymap.set("n", "<S-h>", ":bprev<CR>") -- close current tab
 keymap.set("n", "<leader>Q", "<esc>:wq!<cr>") -- save and close
 
 -- file explorer --
-keymap.set("n", "<leader>e", ":Neotree focus toggle<CR>")
+keymap.set("n", "<leader>e", ":NvimTreeFindFileToggle<CR>")
 
 keymap.set("n", "<leader>b", ":Neotree buffers toggle<CR>")
 

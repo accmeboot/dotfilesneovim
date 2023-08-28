@@ -30,15 +30,7 @@ local plugins = {
 
 	{ "nvim-tree/nvim-web-devicons" },
 
-	{
-		"nvim-neo-tree/neo-tree.nvim",
-		branch = "v3.x",
-		dependencies = {
-			"nvim-lua/plenary.nvim",
-			"nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
-			"MunifTanjim/nui.nvim",
-		},
-	},
+	{ "nvim-tree/nvim-tree.lua" },
 
 	-- statusline
 	{ "nvim-lualine/lualine.nvim" },
@@ -94,10 +86,6 @@ local plugins = {
 		version = "v1.x.x", -- version is optional, but recommended
 		dependencies = { "neovim/nvim-lspconfig" },
 	},
-
-	-- golang --
-	{ "ray-x/go.nvim" },
-	{ "ray-x/guihua.lua" }, -- recommanded if need floating window support
 
 	-- better syntaxis highlight --
 	{ "sheerun/vim-polyglot" },
