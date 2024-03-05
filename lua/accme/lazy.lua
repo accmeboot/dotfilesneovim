@@ -21,6 +21,7 @@ local plugins = {
 	-- themes --
 	{ "https://github.com/sainnhe/gruvbox-material" },
 	{ "felipeagc/fleet-theme-nvim" },
+	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 
 	-- tmux integration--
 	{ "christoomey/vim-tmux-navigator" }, -- navigation between split windows via ctrl + h/j/k/l
@@ -29,11 +30,6 @@ local plugins = {
 	{ "JoosepAlviste/nvim-ts-context-commentstring" }, -- better comenting
 
 	{ "nvim-tree/nvim-web-devicons" },
-
-	{ "nvim-tree/nvim-tree.lua" },
-
-	-- statusline
-	{ "nvim-lualine/lualine.nvim" },
 
 	--telescope
 	{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },

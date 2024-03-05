@@ -25,6 +25,7 @@ mason_lspconfig.setup({
 		"gopls",
 		"pyright",
 		"sqlls",
+		"svelte",
 	},
 	-- auto-install configured servers (with lspconfig)
 	automatic_installation = true, -- not the same as ensure_installed
