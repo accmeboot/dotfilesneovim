@@ -17,7 +17,7 @@ require("accme.plugins.mini-indentscope")
 
 -- THEME --
 -- require("accme.themes.gruvbox")
--- require("accme.themes.fleet")
-require("accme.themes.catppuccin")
+require("accme.themes.fleet")
+-- require("accme.themes.catppuccin")
 
 require("accme.core.colorscheme")

@@ -36,3 +36,6 @@ keymap.set("n", "<leader>fr", "<cmd>Telescope resume<cr>")
 
 --lsp reload --
 keymap.set("n", "<leader>RR", ":LspRestart<CR>")
+
+--toggle relative number
+keymap.set("n", "<leader>n", ":set number! relativenumber!<cr>")
