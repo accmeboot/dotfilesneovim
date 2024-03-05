@@ -39,3 +39,6 @@ keymap.set("n", "<leader>RR", ":LspRestart<CR>")
 
 --toggle relative number
 keymap.set("n", "<leader>n", ":set number! relativenumber!<cr>")
+
+-- open explorer
+keymap.set("n", "<leader>e", ":Ex<cr>")
