@@ -29,8 +29,6 @@ local plugins = {
 	{ "numToStr/Comment.nvim" }, -- comment out on gc
 	{ "JoosepAlviste/nvim-ts-context-commentstring" }, -- better comenting
 
-	{ "nvim-tree/nvim-web-devicons" },
-
 	--telescope
 	{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 	{ "nvim-telescope/telescope.nvim" },
