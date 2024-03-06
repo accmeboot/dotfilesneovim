@@ -42,3 +42,9 @@ keymap.set("n", "<leader>n", ":set number! relativenumber!<cr>")
 
 -- open explorer
 keymap.set("n", "<leader>e", ":Ex<cr>")
+
+-- close buffer
+keymap.set("n", "<leader>b", ":bd<cr>")
+
+-- open fugitive
+keymap.set("n", "<leader>g", ":tab G<cr>")
