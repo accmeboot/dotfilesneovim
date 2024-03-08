@@ -48,3 +48,6 @@ keymap.set("n", "<leader>b", ":bd<cr>")
 
 -- open fugitive
 keymap.set("n", "<leader>g", ":tab G<cr>")
+
+-- quit
+keymap.set("n", "<leader>q", ":wqa<cr>")
