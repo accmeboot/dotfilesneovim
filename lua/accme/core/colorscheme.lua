@@ -6,14 +6,16 @@ local border = "rounded"
 
 vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
 	border = border,
+	focus = true,
 })
 
 vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, {
 	border = border,
+	focus = true,
 })
 
 vim.diagnostic.config({
-	float = { border = border, source = "always" },
+	float = { border = border, source = "always", focus = true },
 })
 
 -- adding transparency to windows
