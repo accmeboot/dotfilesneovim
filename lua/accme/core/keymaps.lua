@@ -41,7 +41,7 @@ keymap.set("n", "<leader>RR", ":LspRestart<CR>")
 keymap.set("n", "<leader>n", ":set number! relativenumber!<cr>")
 
 -- open explorer
-keymap.set("n", "<leader>e", ":Ex<cr>")
+keymap.set("n", "<leader>e", ":Texplore<cr>")
 
 -- close buffer
 keymap.set("n", "<leader>b", ":bd<cr>")

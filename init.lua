@@ -15,11 +15,4 @@ require("accme.plugins.vim-matchup")
 require("accme.plugins.nvim-colorizer")
 require("accme.plugins.mini-indentscope")
 
--- THEME --
--- require("accme.themes.gruvbox")
--- require("accme.themes.fleet")
--- require("accme.themes.darcula-dark")
--- require("accme.themes.catppuccin")
-require("accme.themes.evergarden")
-
 require("accme.core.colorscheme")
