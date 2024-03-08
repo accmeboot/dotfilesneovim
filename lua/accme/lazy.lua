@@ -15,6 +15,13 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " "
 
 local plugins = {
+	-- copilot
+	{ "github/copilot.vim" },
+	{
+		"CopilotC-Nvim/CopilotChat.nvim",
+		event = "VeryLazy",
+	},
+
 	{ "nvim-lua/plenary.nvim" },
 	{ "https://github.com/echasnovski/mini.indentscope" }, -- animated highilting the current code selection
 	{ "lukas-reineke/indent-blankline.nvim" }, -- indent lines

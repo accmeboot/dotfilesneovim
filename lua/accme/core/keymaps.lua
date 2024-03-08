@@ -12,12 +12,6 @@ keymap.set("n", "<leader>sc", ":close<CR>") -- close current split window
 -- save file --
 keymap.set("n", "<leader>w", ":update<CR>")
 
--- working with tabs --
-keymap.set("n", "<S-j>", ":tabnew<CR>") -- open new tab
-keymap.set("n", "<leader>fc", ":tabclose<CR>") -- close current tab
--- keymap.set("n", "<S-l>", ":tabn<CR>") -- close current tab
--- keymap.set("n", "<S-h>", ":tabp<CR>") -- close current tab
-
 -- close the buffer without closing the window ## works really slow
 keymap.set("n", "<leader>q", ":enew<bar>bd #<CR>")
 

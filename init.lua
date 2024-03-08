@@ -14,5 +14,6 @@ require("accme.plugins.lsp.polyglot")
 require("accme.plugins.vim-matchup")
 require("accme.plugins.nvim-colorizer")
 require("accme.plugins.mini-indentscope")
+require("accme.plugins.copilot")
 
 require("accme.core.colorscheme")
