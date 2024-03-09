@@ -71,7 +71,11 @@ vim.g.rustaceanvim = {
 		on_attach = on_attach,
 		default_settings = {
 			-- rust-analyzer language server configuration
-			["rust-analyzer"] = {},
+			["rust-analyzer"] = {
+				diagnostics = {
+					enable = true,
+				},
+			},
 		},
 	},
 	-- DAP configuration
@@ -158,5 +162,13 @@ lspconfig["lua_ls"].setup({
 				},
 			},
 		},
+	},
+})
+
+vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
+	virtual_text = {
+		-- prefix = " ",
+		prefix = "",
+		spacing = 4,
 	},
 })

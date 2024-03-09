@@ -17,7 +17,7 @@ require("lspconfig").efm.setup(vim.tbl_extend("force", efmls_config, {
 	on_attach = function(current_client, bufnr)
 		if current_client.supports_method("textDocument/formatting") then
 			vim.api.nvim_clear_autocmds({ buffer = bufnr })
-			vim.api.nvim_create_autocmd("BufWritePre", {
+			vim.api.nvim_create_autocmd("BufWritePost", {
 				buffer = bufnr,
 				callback = function()
 					vim.lsp.buf.format()

@@ -23,19 +23,19 @@ local plugins = {
 	},
 
 	{ "nvim-lua/plenary.nvim" },
-	{ "https://github.com/echasnovski/mini.indentscope" }, -- animated highilting the current code selection
-	{ "lukas-reineke/indent-blankline.nvim" },            -- indent lines
+	{ "lukas-reineke/indent-blankline.nvim" }, -- indent lines
+
 	-- themes --
 	{ "https://github.com/sainnhe/gruvbox-material" },
 
 	-- tmux integration--
-	{ "christoomey/vim-tmux-navigator" },             -- navigation between split windows via ctrl + h/j/k/l
+	{ "christoomey/vim-tmux-navigator" }, -- navigation between split windows via ctrl + h/j/k/l
 
-	{ "numToStr/Comment.nvim" },                      -- comment out on gc
+	{ "numToStr/Comment.nvim" }, -- comment out on gc
 	{ "JoosepAlviste/nvim-ts-context-commentstring" }, -- better comenting
 
 	--telescope
-	{ "nvim-telescope/telescope-fzf-native.nvim",       build = "make" },
+	{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 	{ "nvim-telescope/telescope.nvim" },
 
 	-- autocomplition
