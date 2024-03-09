@@ -4,9 +4,9 @@ local keymap = vim.keymap
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 
 -- splitting windows
-keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically
-keymap.set("n", "<leader>sh", "<C-w>s") -- split window horizontally
-keymap.set("n", "<leader>se", "<C-w>=") -- make split windows equal width
+keymap.set("n", "<leader>sv", "<C-w>v")     -- split window vertically
+keymap.set("n", "<leader>sh", "<C-w>s")     -- split window horizontally
+keymap.set("n", "<leader>se", "<C-w>=")     -- make split windows equal width
 keymap.set("n", "<leader>sc", ":close<CR>") -- close current split window
 
 -- save file --
@@ -15,8 +15,8 @@ keymap.set("n", "<leader>w", ":update<CR>")
 -- close the buffer without closing the window ## works really slow
 keymap.set("n", "<leader>q", ":enew<bar>bd #<CR>")
 
-keymap.set("n", "<S-l>", ":bnext<CR>") -- close current tab
-keymap.set("n", "<S-h>", ":bprev<CR>") -- close current tab
+keymap.set("n", "<S-l>", ":bnext<CR>")        -- close current tab
+keymap.set("n", "<S-h>", ":bprev<CR>")        -- close current tab
 
 keymap.set("n", "<leader>Q", "<esc>:wq!<cr>") -- save and close
 
@@ -35,7 +35,7 @@ keymap.set("n", "<leader>RR", ":LspRestart<CR>")
 keymap.set("n", "<leader>n", ":set number! relativenumber!<cr>")
 
 -- open explorer
-keymap.set("n", "<leader>e", ":Texplore<cr>")
+keymap.set("n", "<leader>e", ":Ex<cr>")
 
 -- close buffer
 keymap.set("n", "<leader>b", ":bd<cr>")

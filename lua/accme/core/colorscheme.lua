@@ -15,7 +15,7 @@ vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.s
 })
 
 vim.diagnostic.config({
-	float = { border = border, source = "always", focus = true },
+	float = { border = border, source = true, focus = true },
 })
 
 -- adding transparency to windows
