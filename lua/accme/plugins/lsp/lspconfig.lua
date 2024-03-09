@@ -62,6 +62,22 @@ for type, icon in pairs(signs) do
 	vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 end
 
+-- rust --
+vim.g.rustaceanvim = {
+	-- Plugin configuration
+	tools = {},
+	-- LSP configuration
+	server = {
+		on_attach = on_attach,
+		default_settings = {
+			-- rust-analyzer language server configuration
+			["rust-analyzer"] = {},
+		},
+	},
+	-- DAP configuration
+	dap = {},
+}
+
 -- -- configure html server
 lspconfig["html"].setup({
 	capabilities = capabilities,
@@ -111,8 +127,8 @@ lspconfig["tailwindcss"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
 })
---
--- -- configure emmet language server
+
+-- configure emmet language server
 lspconfig["emmet_ls"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,

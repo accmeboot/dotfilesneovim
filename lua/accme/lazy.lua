@@ -91,6 +91,13 @@ local plugins = {
 
 	-- git --
 	{ "https://github.com/tpope/vim-fugitive" },
+
+	-- rust
+	{
+		"mrcjkb/rustaceanvim",
+		version = "^4", -- Recommended
+		ft = { "rust" },
+	},
 }
 
 require("lazy").setup(plugins, {
