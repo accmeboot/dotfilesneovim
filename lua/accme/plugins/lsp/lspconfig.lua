@@ -37,12 +37,12 @@ local on_attach = function(client, bufnr)
 	local opts = { noremap = true, silent = true, buffer = bufnr }
 
 	-- set keybinds
-	keymap.set("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts) -- go to definition
-	keymap.set("n", "K", "<cmd>lua vim.lsp.buf.hover()<CR>", opts) -- show definition
-	keymap.set("n", "gf", "<cmd>lua vim.lsp.buf.references()<CR>", opts) -- show references
+	keymap.set("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)        -- go to definition
+	keymap.set("n", "K", "<cmd>lua vim.lsp.buf.hover()<CR>", opts)              -- show definition
+	keymap.set("n", "gf", "<cmd>lua vim.lsp.buf.references()<CR>", opts)        -- show references
 	keymap.set("n", "<leader>C", "<cmd>lua vim.lsp.buf.code_action()<CR>", opts) -- show references
-	keymap.set("n", "<leader>R", "<cmd>lua vim.lsp.buf.rename()<CR>", opts) -- rename everywhere
-	keymap.set("n", "gr", "<cmd>lua vim.diagnostic.open_float()<CR>", opts) -- show diagnostic
+	keymap.set("v", "<leader>R", "<cmd>lua vim.lsp.buf.rename()<CR>", opts)     -- rename everywhere
+	keymap.set("n", "gr", "<cmd>lua vim.diagnostic.open_float()<CR>", opts)     -- show diagnostic
 
 	-- typescript specific keymaps (e.g. rename file and update imports)
 	if client.name == "tsserver" then
@@ -74,7 +74,7 @@ lspconfig["pyright"].setup({
 	on_attach = on_attach,
 	root_dir = function(fname)
 		return lsputil.root_pattern(".git", "setup.py", "setup.cfg", "pyproject.toml", "requirements.txt")(fname)
-			or lsputil.path.dirname(fname)
+				or lsputil.path.dirname(fname)
 	end,
 })
 
