@@ -45,8 +45,8 @@ local plugins = {
 
 	-- snippets
 	{ "L3MON4D3/LuaSnip" },
-	{ "saadparwaiz1/cmp_luasnip" },
-	{ "rafamadriz/friendly-snippets" },
+	-- { "saadparwaiz1/cmp_luasnip" },
+	-- { "rafamadriz/friendly-snippets" },
 
 	-- managing & installing lsp servers --
 	{ "williamboman/mason.nvim" },
@@ -82,7 +82,7 @@ local plugins = {
 	-- formatting & linting
 	{
 		"creativenull/efmls-configs-nvim",
-		version = "v1.x.x", -- version is optional, but recommended
+		-- version = "v1.x.x", -- version is optional, but recommended
 		dependencies = { "neovim/nvim-lspconfig" },
 	},
 
