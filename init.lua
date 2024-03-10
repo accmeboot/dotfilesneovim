@@ -5,6 +5,8 @@ require("accme.core.keymaps")
 require("accme.plugins.comment")
 require("accme.plugins.telescope")
 
+require("accme.core.statusline")
+
 require("accme.plugins.lsp.mason")
 require("accme.plugins.lsp.lspconfig")
 require("accme.plugins.lsp.efmls")
@@ -20,3 +22,4 @@ require("accme.plugins.indent-blankline")
 require("accme.plugins.copilot")
 
 require("accme.core.colorscheme")
+
