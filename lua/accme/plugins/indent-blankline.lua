@@ -4,7 +4,7 @@ if not status then
 end
 
 indent_blankline.setup({
-	indent = {
-		char = "┆",
+	scope = {
+		show_start = false,
 	},
 })
