@@ -18,7 +18,7 @@ require("accme.plugins.treesitter")
 
 require("accme.plugins.vim-matchup")
 require("accme.plugins.nvim-colorizer")
-require("accme.plugins.indent-blankline")
+-- require("accme.plugins.indent-blankline")
 require("accme.plugins.copilot")
 
 require("accme.core.colorscheme")

@@ -13,7 +13,6 @@ local efmls_config = {
 	},
 }
 
-
 require("lspconfig").efm.setup(vim.tbl_extend("force", efmls_config, {
 	on_attach = function(current_client, bufnr)
 		if current_client.supports_method("textDocument/formatting") then

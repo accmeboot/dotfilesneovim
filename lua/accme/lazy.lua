@@ -23,7 +23,6 @@ local plugins = {
 	},
 
 	{ "nvim-lua/plenary.nvim" },
-	{ "lukas-reineke/indent-blankline.nvim" }, -- indent lines
 
 	-- themes --
 	{ "https://github.com/sainnhe/gruvbox-material" },
