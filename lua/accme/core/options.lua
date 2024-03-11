@@ -33,3 +33,5 @@ opt.clipboard:append("unnamedplus") -- for copy/paste from the outside
 -- split windows
 opt.splitright = true
 opt.splitbelow = true
+
+vim.g.netrw_liststyle = 3
