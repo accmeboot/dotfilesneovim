@@ -49,3 +49,9 @@ keymap.set("n", "<leader>q", ":wqa<cr>")
 -- moving selection
 keymap.set("v", "<C-j>", ":m '>+1<cr>gv=gv")
 keymap.set("v", "<C-k>", ":m '<-2<cr>gv=gv")
+
+-- resize split windows
+keymap.set("n", "<leader>]", ":vertical resize -2<CR>")
+keymap.set("n", "<leader>[", ":vertical resize +2<CR>")
+keymap.set("n", "<leader>{", ":resize -2<CR>")
+keymap.set("n", "<leader>}", ":resize +2<CR>")
