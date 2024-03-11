@@ -15,17 +15,16 @@ opt.wrap = false
 -- search settings
 opt.ignorecase = true
 opt.smartcase = true
-
--- cursor line
+-- cursor 
 opt.cursorline = true
 
 -- appearance
 opt.termguicolors = true
 -- opt.background = "transparent" -- doesn't work this way
-opt.signcolumn = "yes" -- addes to the termguicolor something
+opt.signcolumn = "yes" -- adds to the termguicolor something
 
 -- backspace
-opt.backspace = "indent,eol,start" --- I HAVE NO IDEA WHAT IT DOES
+opt.backspace = "indent,eol,start" --- I HAVE NO IDEA WHAT IT 
 
 -- clipboard
 opt.clipboard:append("unnamedplus") -- for copy/paste from the outside
@@ -36,3 +35,7 @@ opt.splitbelow = true
 
 vim.g.netrw_liststyle = 3
 vim.g.netrw_banner = 0
+
+opt.spelllang = "en_es"
+opt.spell = true
+
