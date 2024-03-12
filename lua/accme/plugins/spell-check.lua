@@ -15,7 +15,7 @@ local function get_win_dimensions()
 
 	local cursor = vim.api.nvim_win_get_cursor(0)
 	local cursor_row = cursor[1]
-	local cursor_col = cursor[2] + 7 -- 7 padding for status line
+	local cursor_col = cursor[2] + 7 -- 7 default offset
 
 	local first_visible_line = vim.fn.line("w0")
 	local space_below = win_height - (cursor_row - first_visible_line + 1)
@@ -43,9 +43,6 @@ local function prepare_win(win)
 		vim.api.nvim_win_set_option(win, "winhighlight", "CursorLine:MyCursorLine")
 	end
 
-	vim.api.nvim_win_set_option(win, "relativenumber", false)
-	vim.api.nvim_win_set_option(win, "statuscolumn", " %l")
-	vim.api.nvim_win_set_option(win, "number", true)
 	vim.api.nvim_win_set_option(win, "cursorline", true)
 end
 
@@ -56,7 +53,7 @@ local function create_floating_window(width)
 
 	local win = vim.api.nvim_open_win(buf, true, {
 		relative = "win",
-		width = width + 7, -- 7 is the padding of the window,
+		width = width,
 		height = height,
 		border = "rounded",
 		style = "minimal",
