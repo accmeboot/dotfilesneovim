@@ -15,7 +15,7 @@ local function get_win_dimensions()
 
 	local cursor = vim.api.nvim_win_get_cursor(0)
 	local cursor_row = cursor[1]
-	local cursor_col = cursor[2]
+	local cursor_col = cursor[2] + 7 -- 7 padding for status line
 
 	local first_visible_line = vim.fn.line("w0")
 	local space_below = win_height - (cursor_row - first_visible_line + 1)
