@@ -28,5 +28,3 @@ vim.cmd("highlight DiffAdd guibg=#3D3D3D")
 vim.cmd("highlight DiffDelete guibg=#3D3D3D")
 vim.cmd("highlight DiffChange guibg=#3D3D3D")
 vim.cmd("highlight DiffText guibg=#3E3323 guifg=#E0A135")
-
--- ssasdes.load()

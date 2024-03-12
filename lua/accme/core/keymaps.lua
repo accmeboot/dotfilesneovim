@@ -12,13 +12,8 @@ keymap.set("n", "<leader>sc", ":close<CR>") -- close current split window
 -- save file --
 keymap.set("n", "<leader>w", ":update<CR>")
 
--- close the buffer without closing the window ## works really slow
-keymap.set("n", "<leader>q", ":enew<bar>bd #<CR>")
-
-keymap.set("n", "<S-l>", ":bnext<CR>") -- close current tab
-keymap.set("n", "<S-h>", ":bprev<CR>") -- close current tab
-
-keymap.set("n", "<leader>Q", "<esc>:wq!<cr>") -- save and close
+keymap.set("n", "<S-l>", ":bnext<CR>")
+keymap.set("n", "<S-h>", ":bprev<CR>")
 
 -- telescope --
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>")
@@ -51,7 +46,11 @@ keymap.set("v", "<C-j>", ":m '>+1<cr>gv=gv")
 keymap.set("v", "<C-k>", ":m '<-2<cr>gv=gv")
 
 -- resize split windows
-keymap.set("n", "<leader>]", ":vertical resize -2<CR>")
-keymap.set("n", "<leader>[", ":vertical resize +2<CR>")
-keymap.set("n", "<leader>{", ":resize -2<CR>")
-keymap.set("n", "<leader>}", ":resize +2<CR>")
+keymap.set("n", "<leader>]", ":vertical resize -5<CR>")
+keymap.set("n", "<leader>[", ":vertical resize +5<CR>")
+keymap.set("n", "<leader>{", ":resize -5<CR>")
+keymap.set("n", "<leader>}", ":resize +5<CR>")
+
+-- Preserve the copied value
+keymap.set("x", "<leader>p", '"_dP')
+
