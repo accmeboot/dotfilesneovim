@@ -54,7 +54,9 @@ keymap.set("n", "<leader>}", ":resize +5<CR>")
 -- Preserve the copied value
 keymap.set("x", "<leader>p", '"_dP')
 
-
 -- center on scroll
 keymap.set("n", "<C-d>", "<C-d>zz")
 keymap.set("n", "<C-u>", "<C-u>zz")
+
+-- spell suggestion
+keymap.set("n", "<leader>m", ":SpellSuggest<CR>")

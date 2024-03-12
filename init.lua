@@ -1,3 +1,6 @@
+-- My plugins
+require("accme.plugins.spell-check")
+
 require("accme.lazy")
 require("accme.core.autocmd")
 require("accme.core.options")
