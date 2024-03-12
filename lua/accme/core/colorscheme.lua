@@ -24,5 +24,9 @@ vim.cmd("highlight link NormalFloat Normal")
 vim.cmd("highlight NormalFloat ctermbg=NONE guibg=NONE")
 vim.cmd("highlight Pmenu ctermbg=NONE guibg=NONE")
 
--- make cursorline underlined
--- vim.api.nvim_set_hl(0, "CursorLine", { underline = true })
+vim.cmd("highlight DiffAdd guibg=#3D3D3D")
+vim.cmd("highlight DiffDelete guibg=#3D3D3D")
+vim.cmd("highlight DiffChange guibg=#3D3D3D")
+vim.cmd("highlight DiffText guibg=#3E3323 guifg=#E0A135")
+
+-- ssasdes.load()
