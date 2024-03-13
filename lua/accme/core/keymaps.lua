@@ -32,14 +32,11 @@ keymap.set("n", "<leader>n", ":set number! relativenumber!<cr>")
 -- open explorer
 keymap.set("n", "<leader>e", ":Ex<cr>")
 
--- close buffer
-keymap.set("n", "<leader>b", ":bd<cr>")
-
 -- open fugitive
 keymap.set("n", "<leader>g", ":tab G<cr>")
 
 -- quit
-keymap.set("n", "<leader>q", ":wqa<cr>")
+keymap.set("n", "<leader>q", ":q<cr>")
 
 -- moving selection
 keymap.set("v", "<C-j>", ":m '>+1<cr>gv=gv")
