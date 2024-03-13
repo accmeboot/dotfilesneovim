@@ -13,7 +13,7 @@ if status then
 			border = "rounded",
 		},
 		mappings = {
-			complete = "<leader>c",
+			complete = "<C-c>",
 		},
 	})
 
