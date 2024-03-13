@@ -60,10 +60,20 @@ local function lineinfo()
 	return " %P %l:%c "
 end
 
+local function get_git_branch()
+	local fugitive = vim.fn.exists("*FugitiveHead") == 1 and vim.fn.FugitiveHead() or ""
+	return fugitive ~= "" and "%#VirtualTextInfo#" .. " " .. fugitive .. " " or ""
+end
+
 Statusline = {}
 
 Statusline.active = function()
 	return table.concat({
+		get_git_branch(),
+		"%#Statusline#",
+		"%=%#StatuslineExtra#",
+		-- "📁",
+		"🗿",
 		filepath(),
 		filename(),
 		"%=%#StatuslineExtra#",
@@ -73,8 +83,6 @@ Statusline.active = function()
 		lineinfo(),
 	})
 end
-
-print(lsp())
 
 function Statusline.inactive()
 	return " %F"
