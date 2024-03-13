@@ -62,7 +62,7 @@ end
 
 local function get_git_branch()
 	local fugitive = vim.fn.exists("*FugitiveHead") == 1 and vim.fn.FugitiveHead() or ""
-	return fugitive ~= "" and "%#VirtualTextInfo#" .. " " .. fugitive .. " " or ""
+	return fugitive ~= "" and "%#VirtualTextHint#" .. " " .. fugitive .. " " or ""
 end
 
 Statusline = {}
@@ -76,8 +76,9 @@ Statusline.active = function()
 		filename(),
 		"%=%#StatuslineExtra#",
 		lsp(),
-		"%#Statusline#",
+		"%#VirtualTextInfo#",
 		filetype(),
+		"%#Statusline#",
 		lineinfo(),
 	})
 end
@@ -96,4 +97,3 @@ vim.api.nvim_exec2(
 ]],
 	{ output = false }
 )
-
