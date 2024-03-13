@@ -5,11 +5,10 @@ require("CopilotChat").setup({
 	language = "English",      -- Copilot answer language settings when using default prompts. Default language is English.
 	-- proxy = "socks5://127.0.0.1:3000", -- Proxies requests via https or socks.
 	-- temperature = 0.1,
+	window = {
+		layout = "float",
+		border = "rounded",
+	},
 })
 
-vim.keymap.set('n', '<leader>cb', ':CopilotChatBuffer ')
-vim.keymap.set('n', '<leader>ct', ':CopilotChatTests<cr>')
-vim.keymap.set('n', '<leader>cs', ':CopilotChatVsplitToggle<cr>')
-vim.keymap.set('n', '<leader>cp', ':CopilotChatInPlace<cr>')
-vim.keymap.set('n', '<leader>cf', ':CopilotChatFixDiagnostic<cr>')
-vim.keymap.set('n', '<leader>cr', ':CopilotChatReset<cr>')
+vim.keymap.set('n', '<leader>b', ':CopilotChatToggle<CR>')

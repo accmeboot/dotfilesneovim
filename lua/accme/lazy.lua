@@ -20,6 +20,7 @@ local plugins = {
 	{
 		"CopilotC-Nvim/CopilotChat.nvim",
 		event = "VeryLazy",
+branch = "canary",
 	},
 
 	{ "nvim-lua/plenary.nvim" },
