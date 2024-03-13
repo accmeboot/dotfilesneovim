@@ -43,6 +43,8 @@ local on_attach = function(client, bufnr)
 	keymap.set("n", "<leader>C", "<cmd>lua vim.lsp.buf.code_action()<CR>", opts) -- show references
 	keymap.set("v", "<leader>R", "<cmd>lua vim.lsp.buf.rename()<CR>", opts) -- rename everywhere
 	keymap.set("n", "gr", "<cmd>lua vim.diagnostic.open_float()<CR>", opts) -- show diagnostic
+	keymap.set("n", "[d", "<cmd>lua vim.diagnostic.goto_prev()<CR>", opts)
+	keymap.set("n", "]d", "<cmd>lua vim.diagnostic.goto_next()<CR>", opts)
 
 	-- typescript specific keymaps (e.g. rename file and update imports)
 	if client.name == "tsserver" then
@@ -67,9 +69,9 @@ vim.g.rustaceanvim = {
 				diagnostics = {
 					enable = true,
 				},
-checkOnSave = {
-        command = "clippy",
-      },
+				checkOnSave = {
+					command = "clippy",
+				},
 			},
 		},
 	},
