@@ -14,6 +14,7 @@ if status then
 		},
 		mappings = {
 			complete = "<leader>c",
+			close = '<Esc>'
 		},
 	})
 
