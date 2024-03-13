@@ -54,7 +54,7 @@ local function is_fit(height)
 	local cursor = vim.api.nvim_win_get_cursor(0)
 	local cursor_row = cursor[1]
 	local first_visible_line = vim.fn.line("w0")
-	local space_below = win_height - (cursor_row - first_visible_line + 1)
+	local space_below = win_height - (cursor_row - first_visible_line + 3)
 
 	return space_below >= height
 end
