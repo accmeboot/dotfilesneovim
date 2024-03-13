@@ -9,6 +9,10 @@ require("CopilotChat").setup({
 		layout = "float",
 		border = "rounded",
 	},
+	mappings = {
+		complete = '<leader>c',
+	},
 })
 
 vim.keymap.set('n', '<leader>b', ':CopilotChatToggle<CR>')
+vim.keymap.set('v', '<leader>b', ':<C-U>CopilotChatToggle<CR>')
