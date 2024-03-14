@@ -11,96 +11,17 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
--- Required by lazy
-vim.g.mapleader = " "
-
-local plugins = {
-	-- copilot
-	{ "github/copilot.vim" },
-	{
-		"CopilotC-Nvim/CopilotChat.nvim",
-		event = "VeryLazy",
-branch = "canary",
+require("lazy").setup({ { import = "accme.plugins" }, { import = "accme.plugins.lsp" }, { import = "accme.themes" } }, {
+	install = {
+		colorscheme = { "nightfly" },
 	},
-
-	{ "nvim-lua/plenary.nvim" },
-
-	-- themes --
-	{ "https://github.com/sainnhe/gruvbox-material" },
-
-	-- tmux integration--
-	{ "christoomey/vim-tmux-navigator" }, -- navigation between split windows via ctrl + h/j/k/l
-
-	{ "numToStr/Comment.nvim" }, -- comment out on gc
-	{ "JoosepAlviste/nvim-ts-context-commentstring" }, -- better comenting
-
-	--telescope
-	{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
-	{ "nvim-telescope/telescope.nvim" },
-
-	-- autocomplition
-	{ "hrsh7th/nvim-cmp" },
-	{ "hrsh7th/cmp-buffer" },
-	{ "hrsh7th/cmp-path" },
-
-	-- snippets
-	{ "L3MON4D3/LuaSnip" },
-	{ "saadparwaiz1/cmp_luasnip" },
-	{ "rafamadriz/friendly-snippets" },
-
-	-- managing & installing lsp servers --
-	{ "williamboman/mason.nvim" },
-	{ "williamboman/mason-lspconfig.nvim" },
-
-	-- configuring lsp servers --
-	{ "neovim/nvim-lspconfig" }, -- easily configure language servers
-	{ "hrsh7th/cmp-nvim-lsp" }, -- for autocompletion
-	{
-		"pmizio/typescript-tools.nvim",
-		dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
+	checker = {
+		enabled = true,
+		notify = false,
 	},
-	{ "onsails/lspkind.nvim" }, -- vs-code like icons for autocompletion
-
-	-- treesitter configuration
-	{
-		"nvim-treesitter/nvim-treesitter",
-		build = function()
-			local ts_update = require("nvim-treesitter.install").update({ with_sync = true })
-			ts_update()
-		end,
+	change_detection = {
+		notify = false,
 	},
-	-- auto closing
-	{ "windwp/nvim-autopairs" }, -- autoclose parens, brackets, quotes, etc...
-	{ "windwp/nvim-ts-autotag" }, -- autoclose tags
-
-	-- closing tags highlight --
-	{ "andymass/vim-matchup" },
-
-	-- css colors --
-	{ "norcalli/nvim-colorizer.lua" },
-
-	-- formatting & linting
-	{
-		"creativenull/efmls-configs-nvim",
-		-- version = "v1.x.x", -- version is optional, but recommended
-		dependencies = { "neovim/nvim-lspconfig" },
-	},
-
-	-- better syntaxis highlight --
-	{ "sheerun/vim-polyglot" },
-
-	-- git --
-	{ "https://github.com/tpope/vim-fugitive" },
-
-	-- rust
-	{
-		"mrcjkb/rustaceanvim",
-		version = "^4", -- Recommended
-		ft = { "rust" },
-	},
-}
-
-require("lazy").setup(plugins, {
 	ui = {
 		border = "rounded",
 	},

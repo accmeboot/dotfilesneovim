@@ -1,6 +1,3 @@
--- THEME --
-require("accme.themes.gruvbox")
-
 -- adding border to floating windows from LSP
 local border = "rounded"
 
