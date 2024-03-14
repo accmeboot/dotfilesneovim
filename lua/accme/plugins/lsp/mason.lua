@@ -1,6 +1,6 @@
 return {
 	"williamboman/mason.nvim",
-	dependencies = { "williamboman/mason-lspconfig.nvim" },
+	dependencies = { "williamboman/mason-lspconfig.nvim", "WhoIsSethDaniel/mason-tool-installer.nvim" },
 	config = function()
 		local mason_lspconfig = require("mason-lspconfig")
 		local mason = require("mason")
@@ -24,6 +24,17 @@ return {
 			},
 			-- auto-install configured servers (with lspconfig)
 			automatic_installation = true, -- not the same as ensure_installed
+		})
+
+		require("mason-tool-installer").setup({
+			ensure_installed = {
+				"eslint",
+				"prettier",
+				"stylelint",
+				"eslint_d",
+				"prettierd",
+				"goimports",
+			},
 		})
 	end,
 }
