@@ -5,7 +5,11 @@ return {
 		local mason_lspconfig = require("mason-lspconfig")
 		local mason = require("mason")
 
-		mason.setup()
+		mason.setup({
+			ui = {
+				border = "rounded",
+			},
+		})
 
 		mason_lspconfig.setup({
 			-- list of servers for mason to install
