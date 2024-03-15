@@ -6,7 +6,7 @@ return {
 	config = function()
 		local chat = require("CopilotChat")
 		chat.setup({
-			show_help = "yes", -- Show help text for CopilotChatInPlace, default: yes
+			show_help = "no", -- Show help text for CopilotChatInPlace, default: yes
 			debug = false, -- Enable or disable debug mode, the log file will be in ~/.local/state/nvim/CopilotChat.nvim.log
 			disable_extra_info = "no", -- Disable extra information (e.g: system prompt) in the response.
 			language = "English", -- Copilot answer language settings when using default prompts. Default language is English.
@@ -29,9 +29,9 @@ return {
 			})
 		end
 
-		vim.keymap.set("n", "<leader>b", ":CopilotChatToggle<CR>")
+		vim.keymap.set("n", "<leader>cb", ":CopilotChatToggle<CR>")
 		vim.keymap.set("v", "<leader>b", ":<C-U>CopilotChatToggle<CR>")
-		vim.keymap.set("n", "<leader>h", open_h_split)
-		vim.keymap.set("v", "<leader>h", open_h_split)
+		vim.keymap.set("n", "<leader>cf", open_h_split)
+		vim.keymap.set("v", "<leader>cf", open_h_split)
 	end,
 }
