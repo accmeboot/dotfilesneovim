@@ -29,9 +29,9 @@ return {
 			})
 		end
 
-		vim.keymap.set("n", "<leader>cb", ":CopilotChatToggle<CR>")
-		vim.keymap.set("v", "<leader>b", ":<C-U>CopilotChatToggle<CR>")
-		vim.keymap.set("n", "<leader>cf", open_h_split)
-		vim.keymap.set("v", "<leader>cf", open_h_split)
+		vim.keymap.set("n", "<C-a>b", ":CopilotChatToggle<CR>")
+		vim.keymap.set("v", "<C-a>b", ":<C-U>CopilotChatToggle<CR>")
+		vim.keymap.set("n", "<C-a>h", open_h_split)
+		vim.keymap.set("v", "<C-a>h", open_h_split)
 	end,
 }
