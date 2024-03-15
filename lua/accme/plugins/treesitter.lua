@@ -55,5 +55,13 @@ return {
 
 		-- enable nvim-ts-context-commentstring plugin for commenting tsx and jsx
 		require("ts_context_commentstring").setup({})
+
+		-- MDX support
+		vim.filetype.add({
+			extension = {
+				mdx = "mdx",
+			},
+		})
+		vim.treesitter.language.register("markdown", "mdx")
 	end,
 }
