@@ -17,21 +17,14 @@ keymap.set("n", "<leader>w", ":update<CR>")
 keymap.set("n", "<S-l>", ":bnext<CR>")
 keymap.set("n", "<S-h>", ":bprev<CR>")
 
-
---lsp reload --
 keymap.set("n", "<leader>RR", ":LspRestart<CR>")
-
---toggle relative number
-keymap.set("n", "<leader>n", ":set number! relativenumber!<cr>")
-
--- open explorer
 keymap.set("n", "<leader>e", ":Ex<cr>")
 
 -- open fugitive
 keymap.set("n", "<leader>g", ":tab G<cr>")
 
--- quit
-keymap.set("n", "<leader>q", ":q<cr>")
+-- close buffer
+keymap.set("n", "<leader>q", ":bd<cr>")
 
 -- moving selection
 keymap.set("v", "<C-j>", ":m '>+1<cr>gv=gv")

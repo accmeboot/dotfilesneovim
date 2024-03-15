@@ -16,7 +16,14 @@ return {
 				html = { "prettier" },
 				json = { "prettier" },
 				yaml = { "prettier" },
-				markdown = { "prettier" },
+				markdown = function(bufnr)
+					-- TODO: this is temp fix for MDX storybook files, mdx_analyzer lsp doesn't work
+					if vim.bo[bufnr].filetype == "markdown" then
+						return { "prettier" }
+					end
+
+					return {}
+				end,
 				graphql = { "prettier" },
 				lua = { "stylua" },
 				python = { "isort", "black" },
