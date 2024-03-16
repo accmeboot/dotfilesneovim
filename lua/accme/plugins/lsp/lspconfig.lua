@@ -4,6 +4,11 @@ return {
 	dependencies = {
 		"hrsh7th/cmp-nvim-lsp",
 		{ "antosha417/nvim-lsp-file-operations", config = true },
+		{
+			"mrcjkb/rustaceanvim",
+			version = "^4", -- Recommended
+			ft = { "rust" },
+		},
 	},
 	config = function()
 		local lspconfig = require("lspconfig")
@@ -27,20 +32,24 @@ return {
 
 		local capabilities = cmp_nvim_lsp.default_capabilities()
 
-		lspconfig["rust_analyzer"].setup({
-			capabilities = capabilities,
-			on_attach = on_attach,
-			settings = {
-				["rust-analyzer"] = {
-					diagnostics = {
-						enable = true,
-					},
-					checkOnSave = {
-						command = "clippy",
+		-- LSP config is the same + capabilities
+		vim.g.rustaceanvim = {
+			tools = {},
+			server = {
+				on_attach = on_attach,
+				default_settings = {
+					["rust-analyzer"] = {
+						diagnostics = {
+							enable = true,
+						},
+						checkOnSave = {
+							command = "clippy",
+						},
 					},
 				},
 			},
-		})
+			dap = {},
+		}
 
 		lspconfig["html"].setup({
 			capabilities = capabilities,
