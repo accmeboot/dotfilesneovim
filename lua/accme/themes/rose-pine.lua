@@ -6,7 +6,7 @@ return {
 			variant = "auto", -- auto, main, moon, or dawn
 			dark_variant = "main", -- main, moon, or dawn
 			dim_inactive_windows = false,
-			extend_background_behind_borders = true,
+			extend_background_behind_borders = false,
 
 			enable = {
 				terminal = true,
@@ -17,10 +17,10 @@ return {
 			styles = {
 				bold = true,
 				italic = true,
-				transparency = true,
+				transparency = false,
 			},
 		})
 
-		vim.cmd("colorscheme rose-pine-moon")
+		vim.cmd("colorscheme rose-pine-main")
 	end,
 }
