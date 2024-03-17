@@ -57,10 +57,12 @@ return {
 			sorting = {
 				priority_weight = 2, -- prioritize by source
 				comparators = {
-					cmp.config.compare.order,
-					cmp.config.compare.kind,
 					cmp.config.compare.exact,
-					-- cmp.config.compare.offset,
+					cmp.config.compare.score,
+					cmp.config.compare.kind,
+					cmp.config.compare.sort_text,
+					cmp.config.compare.length,
+					cmp.config.compare.order,
 				},
 			},
 			-- configure lspkind for vs-code like pictograms in completion menu
