@@ -39,3 +39,14 @@ opt.spell = true
 -- keep cursor in the middle of the screen (almost)
 opt.scrolloff = 10
 opt.updatetime = 50
+
+-- FOLDING --
+opt.foldmethod = "indent"
+
+--hides the foldcolumn
+opt.foldcolumn = "0"
+-- makes all folds open by default
+opt.foldlevelstart = 99
+
+-- statuscolumn
+opt.statuscolumn = ' %s%{(&filetype !=# "netrw" && &buftype !=# "nofile") ? (v:relnum?v:relnum:v:lnum) : ""} '

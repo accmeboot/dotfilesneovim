@@ -1,4 +1,3 @@
-require("accme.core.autocmd")
 require("accme.core.options")
 require("accme.core.keymaps")
 
