@@ -17,6 +17,7 @@ return {
 					{
 						"filename",
 						component_separators = { left = "»", right = "«" },
+						path = 1,
 					},
 					{
 						"diagnostics",
