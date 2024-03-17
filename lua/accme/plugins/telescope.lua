@@ -39,8 +39,9 @@ return {
 				layout_strategy = "vertical",
 				layout_config = {
 					prompt_position = "top",
-					height = 0.8,
-					preview_height = 0.2,
+					mirror = true,
+					height = 0.6,
+					preview_height = 0.5,
 					width = 0.6,
 					anchor = "CENTER",
 				},
