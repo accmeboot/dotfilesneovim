@@ -37,6 +37,3 @@ if visual_bg and search_fg and search_bg then
 	vim.cmd("highlight DiffChange guibg=#" .. visual_bg)
 	vim.cmd("highlight DiffText guibg=#" .. search_bg .. " guifg=#" .. search_fg)
 end
-
--- better highlight for matchup
-vim.cmd("highlight MatchParen guifg=NONE guibg=NONE gui=underline cterm=underline")
