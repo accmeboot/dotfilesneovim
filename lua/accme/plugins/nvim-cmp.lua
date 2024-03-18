@@ -4,12 +4,13 @@ return {
 	dependencies = {
 		"hrsh7th/cmp-buffer", -- source for text in buffer
 		"hrsh7th/cmp-path", -- source for file system paths
-		"saadparwaiz1/cmp_luasnip", -- for autocompletion
 		"onsails/lspkind.nvim", -- vs-code like pictograms
+		"L3MON4D3/LuaSnip", -- snippet engine
 	},
 	config = function()
 		local cmp = require("cmp")
 		local lspkind = require("lspkind")
+		local luasnip = require("luasnip")
 
 		cmp.setup({
 			window = {
@@ -24,6 +25,11 @@ return {
 			},
 			completion = {
 				completeopt = "menu,menuone,preview,noselect",
+			},
+			snippet = { -- configure how nvim-cmp interacts with snippet engine
+				expand = function(args)
+					luasnip.lsp_expand(args.body)
+				end,
 			},
 			mapping = cmp.mapping.preset.insert({
 				["<C-k>"] = cmp.mapping.select_prev_item(), -- previous suggestion
@@ -41,7 +47,6 @@ return {
 				{ name = "path" }, -- file system paths
 			}),
 			sorting = {
-				priority_weight = 2, -- prioritize by source
 				comparators = {
 					cmp.config.compare.exact,
 					cmp.config.compare.score,
