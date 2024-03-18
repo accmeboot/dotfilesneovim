@@ -5,6 +5,7 @@ return {
 	dependencies = {
 		"nvim-treesitter/nvim-treesitter-textobjects",
 		"windwp/nvim-ts-autotag",
+		"andymass/vim-matchup",
 	},
 	config = function()
 		-- import nvim-treesitter plugin
@@ -51,6 +52,9 @@ return {
 					scope_incremental = false,
 					node_decremental = "<bs>",
 				},
+			},
+			matchup = {
+				enable = true,
 			},
 		})
 
