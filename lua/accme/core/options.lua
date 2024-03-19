@@ -1,5 +1,9 @@
 local opt = vim.opt -- options gloabals variable
 
+-- disable netrw
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 -- line numbers
 opt.relativenumber = true
 

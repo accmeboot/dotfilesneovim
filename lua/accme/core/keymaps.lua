@@ -18,7 +18,6 @@ keymap.set("n", "<S-l>", ":bnext<CR>")
 keymap.set("n", "<S-h>", ":bprev<CR>")
 
 keymap.set("n", "<leader>RR", ":LspRestart<CR>")
-keymap.set("n", "<leader>e", ":Ex<cr>")
 
 -- open fugitive
 keymap.set("n", "<leader>g", ":tab G<cr>")
