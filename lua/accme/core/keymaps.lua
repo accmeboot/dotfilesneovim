@@ -19,9 +19,6 @@ keymap.set("n", "<S-h>", ":bprev<CR>")
 
 keymap.set("n", "<leader>RR", ":LspRestart<CR>")
 
--- open fugitive
-keymap.set("n", "<leader>g", ":tab G<cr>")
-
 -- close buffer
 keymap.set("n", "<leader>q", ":bd<cr>")
 
