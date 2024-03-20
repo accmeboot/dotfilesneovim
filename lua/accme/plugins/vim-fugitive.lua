@@ -14,6 +14,6 @@ return {
 			end
 		end
 
-		vim.keymap.set("n", "<leader>g", toggle_fugitive)
+		vim.keymap.set("n", "<leader>f", toggle_fugitive)
 	end,
 }
