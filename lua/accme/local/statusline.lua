@@ -58,7 +58,7 @@ end
 
 local function get_git_branch()
 	local fugitive = vim.fn.exists("*FugitiveHead") == 1 and vim.fn.FugitiveHead() or ""
-	return fugitive ~= "" and "%#MatchParen#" .. "⎇`" .. fugitive .. " " or ""
+	return fugitive ~= "" and "%#ModesDelete#" .. "⎇`" .. fugitive .. " " or ""
 end
 
 Statusline = {}
