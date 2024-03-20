@@ -1,9 +1,5 @@
 local opt = vim.opt -- options gloabals variable
 
--- disable netrw
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
-
 -- line numbers
 opt.relativenumber = true
 
@@ -54,3 +50,5 @@ opt.foldlevelstart = 99
 
 -- statuscolumn
 opt.statuscolumn = ' %s%{(&filetype !=# "netrw" && &buftype !=# "nofile") ? (v:relnum?v:relnum:v:lnum) : ""} '
+
+vim.keymap.set("n", "<leader>e", ":Ex<CR>")
