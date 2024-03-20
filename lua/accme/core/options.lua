@@ -50,5 +50,3 @@ opt.foldlevelstart = 99
 
 -- statuscolumn
 opt.statuscolumn = ' %s%{(&filetype !=# "netrw" && &buftype !=# "nofile") ? (v:relnum?v:relnum:v:lnum) : ""} '
-
-vim.keymap.set("n", "<leader>e", ":Ex<CR>")

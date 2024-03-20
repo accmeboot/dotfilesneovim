@@ -41,3 +41,5 @@ keymap.set("n", "<C-u>", "<C-u>zz")
 
 -- spell suggestion
 keymap.set("n", "<leader>m", ":SpellSuggest<CR>")
+
+keymap.set("n", "<leader>e", ":Ex<CR>")
