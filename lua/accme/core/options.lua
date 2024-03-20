@@ -50,3 +50,5 @@ opt.foldlevelstart = 99
 
 -- statuscolumn
 opt.statuscolumn = ' %s%{(&filetype !=# "netrw" && &buftype !=# "nofile") ? (v:relnum?v:relnum:v:lnum) : ""} '
+
+opt.fillchars:append({ eob = " " })
