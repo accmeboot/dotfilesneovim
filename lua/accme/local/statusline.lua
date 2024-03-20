@@ -53,7 +53,7 @@ local function lineinfo()
 	if vim.bo.filetype == "alpha" then
 		return ""
 	end
-	return " %P « %l:%c "
+	return " %P | %l:%c "
 end
 
 local function get_git_branch()
