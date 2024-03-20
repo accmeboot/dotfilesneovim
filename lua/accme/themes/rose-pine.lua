@@ -16,8 +16,8 @@ return {
 
 			styles = {
 				bold = true,
-				italic = true,
-				transparency = true,
+				italic = false,
+				transparency = false,
 			},
 		})
 

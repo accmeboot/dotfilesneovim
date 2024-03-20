@@ -7,3 +7,4 @@ require("accme.core.colorscheme")
 
 -- local
 require("accme.local.spell-check")
+require("accme.local.statusline")
