@@ -34,16 +34,16 @@ local function lsp()
 	local info = ""
 
 	if count["errors"] ~= 0 then
-		errors = "%#DiagnosticSignError#E:" .. count["errors"]
+		errors = "%#DiagnosticVirtualTextError#E:" .. count["errors"] .. "%#Statusline# "
 	end
 	if count["warnings"] ~= 0 then
-		warnings = "%#DiagnosticSignWarn#W:" .. count["warnings"]
+		warnings = "%#DiagnosticVirtualTextWarn#W:" .. count["warnings"] .. "%#Statusline# "
 	end
 	if count["hints"] ~= 0 then
-		hints = "%#DiagnosticSignHint#H:" .. count["hints"]
+		hints = "%#DiagnosticVirtualTextHint#H:" .. count["hints"] .. "%#Statusline# "
 	end
 	if count["info"] ~= 0 then
-		info = "%#DiagnosticsignInformation#I:" .. count["info"]
+		info = "%#DiagnosticVirtualTextInfo#I:" .. count["info"] .. "%#Statusline# "
 	end
 
 	return errors .. warnings .. hints .. info
@@ -67,16 +67,13 @@ Statusline.active = function()
 	return table.concat({
 		get_git_branch(),
 		"%#Statusline#",
-		"%#Statusline#",
-		"%=%#StatuslineExtra#",
 		filepath(),
 		filename(),
 		"%=%#StatuslineExtra#",
 		"%#VirtualTextInfo#",
 		lsp(),
 		"%#Statusline#",
-		" ",
-		"%#DiffAdd#",
+		"%#Substitute#",
 		lineinfo(),
 	})
 end
