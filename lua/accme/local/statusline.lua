@@ -53,12 +53,12 @@ local function lineinfo()
 	if vim.bo.filetype == "alpha" then
 		return ""
 	end
-	return " %P | %l:%c "
+	return " %P %l:%c "
 end
 
 local function get_git_branch()
 	local fugitive = vim.fn.exists("*FugitiveHead") == 1 and vim.fn.FugitiveHead() or ""
-	return fugitive ~= "" and "%#ModesDelete#" .. "⎇`" .. fugitive .. " " or ""
+	return fugitive ~= "" and "%#Visual#" .. "⎇`" .. fugitive .. " " or ""
 end
 
 Statusline = {}
@@ -73,7 +73,7 @@ Statusline.active = function()
 		"%#VirtualTextInfo#",
 		lsp(),
 		"%#Statusline#",
-		"%#Substitute#",
+		"%#Visual#",
 		lineinfo(),
 	})
 end
