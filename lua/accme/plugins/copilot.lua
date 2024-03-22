@@ -1,7 +1,6 @@
 return {
 	"CopilotC-Nvim/CopilotChat.nvim",
 	dependencies = { "github/copilot.vim" },
-	event = "VeryLazy",
 	branch = "canary",
 	config = function()
 		local chat = require("CopilotChat")
@@ -17,7 +16,10 @@ return {
 				border = "rounded",
 			},
 			mappings = {
-				complete = "<C-c>",
+				complete = {
+					detail = "Use @<Tab> or /<Tab> for options.",
+					insert = "<C-c>",
+				},
 			},
 		})
 
