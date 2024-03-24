@@ -41,9 +41,9 @@ local function set_window_options(win)
 	if hint_bg and hint_fg then
 		hint_bg = string.format("%x", hint_bg)
 		hint_fg = string.format("%x", hint_fg)
-		vim.cmd("highlight MyCursorLine guibg=#" .. hint_bg .. " guifg=#" .. hint_fg)
+		vim.cmd("highlight SpellSuggestionLine guibg=#" .. hint_bg .. " guifg=#" .. hint_fg)
 		vim.api.nvim_win_set_option(win, "cursorlineopt", "line")
-		vim.api.nvim_win_set_option(win, "winhighlight", "CursorLine:MyCursorLine")
+		vim.api.nvim_win_set_option(win, "winhighlight", "CursorLine:SpellSuggestionLine")
 	end
 
 	vim.api.nvim_win_set_option(win, "cursorline", true)
