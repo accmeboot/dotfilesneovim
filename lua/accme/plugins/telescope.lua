@@ -64,9 +64,12 @@ return {
 		-- telescope --
 		vim.keymap.set("n", "<leader>tf", "<cmd>Telescope find_files<cr>")
 		vim.keymap.set("n", "<leader>ts", "<cmd>Telescope live_grep<cr>")
-		vim.keymap.set("n", "<leader>tc", "<cmd>Telescope grep_string<cr>")
+		vim.keymap.set("n", "<leader>tw", "<cmd>Telescope grep_string<cr>")
 		vim.keymap.set("n", "<leader>tb", "<cmd>Telescope buffers<cr>")
 		vim.keymap.set("n", "<leader>th", "<cmd>Telescope help_tags<cr>")
 		vim.keymap.set("n", "<leader>tr", "<cmd>Telescope resume<cr>")
+
+		vim.keymap.set("n", "<leader>tgb", "<cmd>Telescope git_branches<cr>")
+		vim.keymap.set("n", "<leader>tgc", "<cmd>Telescope git_commits<cr>")
 	end,
 }
